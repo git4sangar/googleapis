@@ -1,0 +1,391 @@
+Binary file ./cloud_speech.pb.o matches
+./cloud_speech.grpc.pb.cc:24:  "/google.cloud.speech.v1beta1.Speech/StreamingRecognize",
+./cloud_speech.grpc.pb.cc:35:  , rpcmethod_StreamingRecognize_(Speech_method_names[2], ::grpc::RpcMethod::BIDI_STREAMING, channel)
+./cloud_speech.grpc.pb.cc:54:::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* Speech::Stub::StreamingRecognizeRaw(::grpc::ClientContext* context) {
+./cloud_speech.grpc.pb.cc:55:  return new ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>(channel_.get(), rpcmethod_StreamingRecognize_, context);
+./cloud_speech.grpc.pb.cc:58:::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* Speech::Stub::AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) {
+./cloud_speech.grpc.pb.cc:59:  return new ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>(channel_.get(), cq, rpcmethod_StreamingRecognize_, context, tag);
+./cloud_speech.grpc.pb.cc:76:      new ::grpc::BidiStreamingHandler< Speech::Service, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>(
+./cloud_speech.grpc.pb.cc:77:          std::mem_fn(&Speech::Service::StreamingRecognize), this)));
+./cloud_speech.grpc.pb.cc:97:::grpc::Status Speech::Service::StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) {
+./cloud_speech.pb.cc:28:class StreamingRecognizeRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognizeRequest> {
+./cloud_speech.pb.cc:32:} _StreamingRecognizeRequest_default_instance_;
+./cloud_speech.pb.cc:50:class StreamingRecognizeResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognizeResponse> {
+./cloud_speech.pb.cc:51:} _StreamingRecognizeResponse_default_instance_;
+./cloud_speech.pb.cc:83:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _internal_metadata_),
+./cloud_speech.pb.cc:85:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _oneof_case_[0]),
+./cloud_speech.pb.cc:86:  PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&_StreamingRecognizeRequest_default_instance_), streaming_config_),
+./cloud_speech.pb.cc:87:  PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&_StreamingRecognizeRequest_default_instance_), audio_content_),
+./cloud_speech.pb.cc:88:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, streaming_request_),
+./cloud_speech.pb.cc:136:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, _internal_metadata_),
+./cloud_speech.pb.cc:139:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, error_),
+./cloud_speech.pb.cc:140:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, results_),
+./cloud_speech.pb.cc:141:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, result_index_),
+./cloud_speech.pb.cc:142:  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, endpointer_type_),
+./cloud_speech.pb.cc:166:  { 12, -1, sizeof(StreamingRecognizeRequest)},
+./cloud_speech.pb.cc:174:  { 65, -1, sizeof(StreamingRecognizeResponse)},
+./cloud_speech.pb.cc:183:  reinterpret_cast<const ::google::protobuf::Message*>(&_StreamingRecognizeRequest_default_instance_),
+./cloud_speech.pb.cc:191:  reinterpret_cast<const ::google::protobuf::Message*>(&_StreamingRecognizeResponse_default_instance_),
+./cloud_speech.pb.cc:225:  _StreamingRecognizeRequest_default_instance_.Shutdown();
+./cloud_speech.pb.cc:241:  _StreamingRecognizeResponse_default_instance_.Shutdown();
+./cloud_speech.pb.cc:262:  _StreamingRecognizeRequest_default_instance_.DefaultConstruct();
+./cloud_speech.pb.cc:270:  _StreamingRecognizeResponse_default_instance_.DefaultConstruct();
+./cloud_speech.pb.cc:282:  _StreamingRecognizeRequest_default_instance_.streaming_config_ = const_cast< ::google::cloud::speech::v1beta1::StreamingRecognitionConfig*>(
+./cloud_speech.pb.cc:284:  _StreamingRecognizeRequest_default_instance_.audio_content_.UnsafeSetDefault(
+./cloud_speech.pb.cc:298:  _StreamingRecognizeResponse_default_instance_.get_mutable()->error_ = const_cast< ::google::rpc::Status*>(
+./cloud_speech.pb.cc:322:      ".RecognitionAudio\"\236\001\n\031StreamingRecognize"
+./cloud_speech.pb.cc:379:      "ch.v1beta1.StreamingRecognizeResponse(\0010"
+./cloud_speech.pb.cc:439:const ::google::protobuf::EnumDescriptor* StreamingRecognizeResponse_EndpointerType_descriptor() {
+./cloud_speech.pb.cc:443:bool StreamingRecognizeResponse_EndpointerType_IsValid(int value) {
+./cloud_speech.pb.cc:457:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::ENDPOINTER_EVENT_UNSPECIFIED;
+./cloud_speech.pb.cc:458:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::START_OF_SPEECH;
+./cloud_speech.pb.cc:459:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::END_OF_SPEECH;
+./cloud_speech.pb.cc:460:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::END_OF_AUDIO;
+./cloud_speech.pb.cc:461:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::END_OF_UTTERANCE;
+./cloud_speech.pb.cc:462:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::EndpointerType_MIN;
+./cloud_speech.pb.cc:463:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::EndpointerType_MAX;
+./cloud_speech.pb.cc:464:const int StreamingRecognizeResponse::EndpointerType_ARRAYSIZE;
+./cloud_speech.pb.cc:1168:const int StreamingRecognizeRequest::kStreamingConfigFieldNumber;
+./cloud_speech.pb.cc:1169:const int StreamingRecognizeRequest::kAudioContentFieldNumber;
+./cloud_speech.pb.cc:1172:StreamingRecognizeRequest::StreamingRecognizeRequest()
+./cloud_speech.pb.cc:1178:  // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1180:StreamingRecognizeRequest::StreamingRecognizeRequest(const StreamingRecognizeRequest& from)
+./cloud_speech.pb.cc:1199:  // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1202:void StreamingRecognizeRequest::SharedCtor() {
+./cloud_speech.pb.cc:1207:StreamingRecognizeRequest::~StreamingRecognizeRequest() {
+./cloud_speech.pb.cc:1208:  // @@protoc_insertion_point(destructor:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1212:void StreamingRecognizeRequest::SharedDtor() {
+./cloud_speech.pb.cc:1218:void StreamingRecognizeRequest::SetCachedSize(int size) const {
+./cloud_speech.pb.cc:1223:const ::google::protobuf::Descriptor* StreamingRecognizeRequest::descriptor() {
+./cloud_speech.pb.cc:1228:const StreamingRecognizeRequest& StreamingRecognizeRequest::default_instance() {
+./cloud_speech.pb.cc:1233:StreamingRecognizeRequest* StreamingRecognizeRequest::New(::google::protobuf::Arena* arena) const {
+./cloud_speech.pb.cc:1234:  StreamingRecognizeRequest* n = new StreamingRecognizeRequest;
+./cloud_speech.pb.cc:1241:void StreamingRecognizeRequest::clear_streaming_request() {
+./cloud_speech.pb.cc:1242:// @@protoc_insertion_point(one_of_clear_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1260:void StreamingRecognizeRequest::Clear() {
+./cloud_speech.pb.cc:1261:// @@protoc_insertion_point(message_clear_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1265:bool StreamingRecognizeRequest::MergePartialFromCodedStream(
+./cloud_speech.pb.cc:1269:  // @@protoc_insertion_point(parse_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1310:  // @@protoc_insertion_point(parse_success:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1313:  // @@protoc_insertion_point(parse_failure:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1318:void StreamingRecognizeRequest::SerializeWithCachedSizes(
+./cloud_speech.pb.cc:1320:  // @@protoc_insertion_point(serialize_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1333:  // @@protoc_insertion_point(serialize_end:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1336:::google::protobuf::uint8* StreamingRecognizeRequest::InternalSerializeWithCachedSizesToArray(
+./cloud_speech.pb.cc:1339:  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1354:  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1358:size_t StreamingRecognizeRequest::ByteSizeLong() const {
+./cloud_speech.pb.cc:1359:// @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1388:void StreamingRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
+./cloud_speech.pb.cc:1389:// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1391:  const StreamingRecognizeRequest* source =
+./cloud_speech.pb.cc:1392:      ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognizeRequest>(
+./cloud_speech.pb.cc:1395:  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1398:  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1403:void StreamingRecognizeRequest::MergeFrom(const StreamingRecognizeRequest& from) {
+./cloud_speech.pb.cc:1404:// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1422:void StreamingRecognizeRequest::CopyFrom(const ::google::protobuf::Message& from) {
+./cloud_speech.pb.cc:1423:// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1429:void StreamingRecognizeRequest::CopyFrom(const StreamingRecognizeRequest& from) {
+./cloud_speech.pb.cc:1430:// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.cc:1436:bool StreamingRecognizeRequest::IsInitialized() const {
+./cloud_speech.pb.cc:1440:void StreamingRecognizeRequest::Swap(StreamingRecognizeRequest* other) {
+./cloud_speech.pb.cc:1444:void StreamingRecognizeRequest::InternalSwap(StreamingRecognizeRequest* other) {
+./cloud_speech.pb.cc:1450:::google::protobuf::Metadata StreamingRecognizeRequest::GetMetadata() const {
+./cloud_speech.pb.cc:1456:// StreamingRecognizeRequest
+./cloud_speech.pb.cc:1459:bool StreamingRecognizeRequest::has_streaming_config() const {
+./cloud_speech.pb.cc:1462:void StreamingRecognizeRequest::set_has_streaming_config() {
+./cloud_speech.pb.cc:1465:void StreamingRecognizeRequest::clear_streaming_config() {
+./cloud_speech.pb.cc:1471: const ::google::cloud::speech::v1beta1::StreamingRecognitionConfig& StreamingRecognizeRequest::streaming_config() const {
+./cloud_speech.pb.cc:1472:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.cc:1477:::google::cloud::speech::v1beta1::StreamingRecognitionConfig* StreamingRecognizeRequest::mutable_streaming_config() {
+./cloud_speech.pb.cc:1483:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.cc:1486:::google::cloud::speech::v1beta1::StreamingRecognitionConfig* StreamingRecognizeRequest::release_streaming_config() {
+./cloud_speech.pb.cc:1487:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.cc:1497:void StreamingRecognizeRequest::set_allocated_streaming_config(::google::cloud::speech::v1beta1::StreamingRecognitionConfig* streaming_config) {
+./cloud_speech.pb.cc:1503:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.cc:1507:bool StreamingRecognizeRequest::has_audio_content() const {
+./cloud_speech.pb.cc:1510:void StreamingRecognizeRequest::set_has_audio_content() {
+./cloud_speech.pb.cc:1513:void StreamingRecognizeRequest::clear_audio_content() {
+./cloud_speech.pb.cc:1519:const ::std::string& StreamingRecognizeRequest::audio_content() const {
+./cloud_speech.pb.cc:1520:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1526:void StreamingRecognizeRequest::set_audio_content(const ::std::string& value) {
+./cloud_speech.pb.cc:1527:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1534:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1537:void StreamingRecognizeRequest::set_audio_content(::std::string&& value) {
+./cloud_speech.pb.cc:1538:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1546:  // @@protoc_insertion_point(field_set_rvalue:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1549:void StreamingRecognizeRequest::set_audio_content(const char* value) {
+./cloud_speech.pb.cc:1557:  // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1559:void StreamingRecognizeRequest::set_audio_content(const void* value, size_t size) {
+./cloud_speech.pb.cc:1567:  // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1569:::std::string* StreamingRecognizeRequest::mutable_audio_content() {
+./cloud_speech.pb.cc:1575:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1578:::std::string* StreamingRecognizeRequest::release_audio_content() {
+./cloud_speech.pb.cc:1579:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1587:void StreamingRecognizeRequest::set_allocated_audio_content(::std::string* audio_content) {
+./cloud_speech.pb.cc:1597:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.cc:1600:bool StreamingRecognizeRequest::has_streaming_request() const {
+./cloud_speech.pb.cc:1603:void StreamingRecognizeRequest::clear_has_streaming_request() {
+./cloud_speech.pb.cc:1606:StreamingRecognizeRequest::StreamingRequestCase StreamingRecognizeRequest::streaming_request_case() const {
+./cloud_speech.pb.cc:1607:  return StreamingRecognizeRequest::StreamingRequestCase(_oneof_case_[0]);
+./cloud_speech.pb.cc:4227:const int StreamingRecognizeResponse::kErrorFieldNumber;
+./cloud_speech.pb.cc:4228:const int StreamingRecognizeResponse::kResultsFieldNumber;
+./cloud_speech.pb.cc:4229:const int StreamingRecognizeResponse::kResultIndexFieldNumber;
+./cloud_speech.pb.cc:4230:const int StreamingRecognizeResponse::kEndpointerTypeFieldNumber;
+./cloud_speech.pb.cc:4233:StreamingRecognizeResponse::StreamingRecognizeResponse()
+./cloud_speech.pb.cc:4239:  // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4241:StreamingRecognizeResponse::StreamingRecognizeResponse(const StreamingRecognizeResponse& from)
+./cloud_speech.pb.cc:4255:  // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4258:void StreamingRecognizeResponse::SharedCtor() {
+./cloud_speech.pb.cc:4264:StreamingRecognizeResponse::~StreamingRecognizeResponse() {
+./cloud_speech.pb.cc:4265:  // @@protoc_insertion_point(destructor:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4269:void StreamingRecognizeResponse::SharedDtor() {
+./cloud_speech.pb.cc:4275:void StreamingRecognizeResponse::SetCachedSize(int size) const {
+./cloud_speech.pb.cc:4280:const ::google::protobuf::Descriptor* StreamingRecognizeResponse::descriptor() {
+./cloud_speech.pb.cc:4285:const StreamingRecognizeResponse& StreamingRecognizeResponse::default_instance() {
+./cloud_speech.pb.cc:4290:StreamingRecognizeResponse* StreamingRecognizeResponse::New(::google::protobuf::Arena* arena) const {
+./cloud_speech.pb.cc:4291:  StreamingRecognizeResponse* n = new StreamingRecognizeResponse;
+./cloud_speech.pb.cc:4298:void StreamingRecognizeResponse::Clear() {
+./cloud_speech.pb.cc:4299:// @@protoc_insertion_point(message_clear_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4309:bool StreamingRecognizeResponse::MergePartialFromCodedStream(
+./cloud_speech.pb.cc:4313:  // @@protoc_insertion_point(parse_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4356:      // .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.cc:4363:          set_endpointer_type(static_cast< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType >(value));
+./cloud_speech.pb.cc:4383:  // @@protoc_insertion_point(parse_success:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4386:  // @@protoc_insertion_point(parse_failure:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4391:void StreamingRecognizeResponse::SerializeWithCachedSizes(
+./cloud_speech.pb.cc:4393:  // @@protoc_insertion_point(serialize_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4411:  // .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.cc:4417:  // @@protoc_insertion_point(serialize_end:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4420:::google::protobuf::uint8* StreamingRecognizeResponse::InternalSerializeWithCachedSizesToArray(
+./cloud_speech.pb.cc:4423:  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4443:  // .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.cc:4449:  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4453:size_t StreamingRecognizeResponse::ByteSizeLong() const {
+./cloud_speech.pb.cc:4454:// @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4482:  // .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.cc:4495:void StreamingRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) {
+./cloud_speech.pb.cc:4496:// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4498:  const StreamingRecognizeResponse* source =
+./cloud_speech.pb.cc:4499:      ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognizeResponse>(
+./cloud_speech.pb.cc:4502:  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4505:  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4510:void StreamingRecognizeResponse::MergeFrom(const StreamingRecognizeResponse& from) {
+./cloud_speech.pb.cc:4511:// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4526:void StreamingRecognizeResponse::CopyFrom(const ::google::protobuf::Message& from) {
+./cloud_speech.pb.cc:4527:// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4533:void StreamingRecognizeResponse::CopyFrom(const StreamingRecognizeResponse& from) {
+./cloud_speech.pb.cc:4534:// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.cc:4540:bool StreamingRecognizeResponse::IsInitialized() const {
+./cloud_speech.pb.cc:4544:void StreamingRecognizeResponse::Swap(StreamingRecognizeResponse* other) {
+./cloud_speech.pb.cc:4548:void StreamingRecognizeResponse::InternalSwap(StreamingRecognizeResponse* other) {
+./cloud_speech.pb.cc:4556:::google::protobuf::Metadata StreamingRecognizeResponse::GetMetadata() const {
+./cloud_speech.pb.cc:4562:// StreamingRecognizeResponse
+./cloud_speech.pb.cc:4565:bool StreamingRecognizeResponse::has_error() const {
+./cloud_speech.pb.cc:4568:void StreamingRecognizeResponse::clear_error() {
+./cloud_speech.pb.cc:4572:const ::google::rpc::Status& StreamingRecognizeResponse::error() const {
+./cloud_speech.pb.cc:4573:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.cc:4577:::google::rpc::Status* StreamingRecognizeResponse::mutable_error() {
+./cloud_speech.pb.cc:4582:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.cc:4585:::google::rpc::Status* StreamingRecognizeResponse::release_error() {
+./cloud_speech.pb.cc:4586:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.cc:4592:void StreamingRecognizeResponse::set_allocated_error(::google::rpc::Status* error) {
+./cloud_speech.pb.cc:4600:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.cc:4604:int StreamingRecognizeResponse::results_size() const {
+./cloud_speech.pb.cc:4607:void StreamingRecognizeResponse::clear_results() {
+./cloud_speech.pb.cc:4610:const ::google::cloud::speech::v1beta1::StreamingRecognitionResult& StreamingRecognizeResponse::results(int index) const {
+./cloud_speech.pb.cc:4611:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.cc:4614:::google::cloud::speech::v1beta1::StreamingRecognitionResult* StreamingRecognizeResponse::mutable_results(int index) {
+./cloud_speech.pb.cc:4615:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.cc:4618:::google::cloud::speech::v1beta1::StreamingRecognitionResult* StreamingRecognizeResponse::add_results() {
+./cloud_speech.pb.cc:4619:  // @@protoc_insertion_point(field_add:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.cc:4623:StreamingRecognizeResponse::mutable_results() {
+./cloud_speech.pb.cc:4624:  // @@protoc_insertion_point(field_mutable_list:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.cc:4628:StreamingRecognizeResponse::results() const {
+./cloud_speech.pb.cc:4629:  // @@protoc_insertion_point(field_list:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.cc:4634:void StreamingRecognizeResponse::clear_result_index() {
+./cloud_speech.pb.cc:4637:::google::protobuf::int32 StreamingRecognizeResponse::result_index() const {
+./cloud_speech.pb.cc:4638:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
+./cloud_speech.pb.cc:4641:void StreamingRecognizeResponse::set_result_index(::google::protobuf::int32 value) {
+./cloud_speech.pb.cc:4644:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
+./cloud_speech.pb.cc:4647:// .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.cc:4648:void StreamingRecognizeResponse::clear_endpointer_type() {
+./cloud_speech.pb.cc:4651:::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::endpointer_type() const {
+./cloud_speech.pb.cc:4652:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
+./cloud_speech.pb.cc:4653:  return static_cast< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType >(endpointer_type_);
+./cloud_speech.pb.cc:4655:void StreamingRecognizeResponse::set_endpointer_type(::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType value) {
+./cloud_speech.pb.cc:4658:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
+./cloud_speech.pb.h:74:class StreamingRecognizeRequest;
+./cloud_speech.pb.h:75:class StreamingRecognizeRequestDefaultTypeInternal;
+./cloud_speech.pb.h:76:extern StreamingRecognizeRequestDefaultTypeInternal _StreamingRecognizeRequest_default_instance_;
+./cloud_speech.pb.h:77:class StreamingRecognizeResponse;
+./cloud_speech.pb.h:78:class StreamingRecognizeResponseDefaultTypeInternal;
+./cloud_speech.pb.h:79:extern StreamingRecognizeResponseDefaultTypeInternal _StreamingRecognizeResponse_default_instance_;
+./cloud_speech.pb.h:165:enum StreamingRecognizeResponse_EndpointerType {
+./cloud_speech.pb.h:166:  StreamingRecognizeResponse_EndpointerType_ENDPOINTER_EVENT_UNSPECIFIED = 0,
+./cloud_speech.pb.h:167:  StreamingRecognizeResponse_EndpointerType_START_OF_SPEECH = 1,
+./cloud_speech.pb.h:168:  StreamingRecognizeResponse_EndpointerType_END_OF_SPEECH = 2,
+./cloud_speech.pb.h:169:  StreamingRecognizeResponse_EndpointerType_END_OF_AUDIO = 3,
+./cloud_speech.pb.h:170:  StreamingRecognizeResponse_EndpointerType_END_OF_UTTERANCE = 4,
+./cloud_speech.pb.h:171:  StreamingRecognizeResponse_EndpointerType_StreamingRecognizeResponse_EndpointerType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
+./cloud_speech.pb.h:172:  StreamingRecognizeResponse_EndpointerType_StreamingRecognizeResponse_EndpointerType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+./cloud_speech.pb.h:174:bool StreamingRecognizeResponse_EndpointerType_IsValid(int value);
+./cloud_speech.pb.h:175:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse_EndpointerType_EndpointerType_MIN = StreamingRecognizeResponse_EndpointerType_ENDPOINTER_EVENT_UNSPECIFIED;
+./cloud_speech.pb.h:176:const StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse_EndpointerType_EndpointerType_MAX = StreamingRecognizeResponse_EndpointerType_END_OF_UTTERANCE;
+./cloud_speech.pb.h:177:const int StreamingRecognizeResponse_EndpointerType_EndpointerType_ARRAYSIZE = StreamingRecognizeResponse_EndpointerType_EndpointerType_MAX + 1;
+./cloud_speech.pb.h:179:const ::google::protobuf::EnumDescriptor* StreamingRecognizeResponse_EndpointerType_descriptor();
+./cloud_speech.pb.h:180:inline const ::std::string& StreamingRecognizeResponse_EndpointerType_Name(StreamingRecognizeResponse_EndpointerType value) {
+./cloud_speech.pb.h:182:    StreamingRecognizeResponse_EndpointerType_descriptor(), value);
+./cloud_speech.pb.h:184:inline bool StreamingRecognizeResponse_EndpointerType_Parse(
+./cloud_speech.pb.h:185:    const ::std::string& name, StreamingRecognizeResponse_EndpointerType* value) {
+./cloud_speech.pb.h:186:  return ::google::protobuf::internal::ParseNamedEnum<StreamingRecognizeResponse_EndpointerType>(
+./cloud_speech.pb.h:187:    StreamingRecognizeResponse_EndpointerType_descriptor(), name, value);
+./cloud_speech.pb.h:383:class StreamingRecognizeRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.speech.v1beta1.StreamingRecognizeRequest) */ {
+./cloud_speech.pb.h:385:  StreamingRecognizeRequest();
+./cloud_speech.pb.h:386:  virtual ~StreamingRecognizeRequest();
+./cloud_speech.pb.h:388:  StreamingRecognizeRequest(const StreamingRecognizeRequest& from);
+./cloud_speech.pb.h:390:  inline StreamingRecognizeRequest& operator=(const StreamingRecognizeRequest& from) {
+./cloud_speech.pb.h:396:  static const StreamingRecognizeRequest& default_instance();
+./cloud_speech.pb.h:404:  static inline const StreamingRecognizeRequest* internal_default_instance() {
+./cloud_speech.pb.h:405:    return reinterpret_cast<const StreamingRecognizeRequest*>(
+./cloud_speech.pb.h:406:               &_StreamingRecognizeRequest_default_instance_);
+./cloud_speech.pb.h:409:  void Swap(StreamingRecognizeRequest* other);
+./cloud_speech.pb.h:413:  inline StreamingRecognizeRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+./cloud_speech.pb.h:415:  StreamingRecognizeRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+./cloud_speech.pb.h:418:  void CopyFrom(const StreamingRecognizeRequest& from);
+./cloud_speech.pb.h:419:  void MergeFrom(const StreamingRecognizeRequest& from);
+./cloud_speech.pb.h:440:  void InternalSwap(StreamingRecognizeRequest* other);
+./cloud_speech.pb.h:483:  // @@protoc_insertion_point(class_scope:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
+./cloud_speech.pb.h:1272:class StreamingRecognizeResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.speech.v1beta1.StreamingRecognizeResponse) */ {
+./cloud_speech.pb.h:1274:  StreamingRecognizeResponse();
+./cloud_speech.pb.h:1275:  virtual ~StreamingRecognizeResponse();
+./cloud_speech.pb.h:1277:  StreamingRecognizeResponse(const StreamingRecognizeResponse& from);
+./cloud_speech.pb.h:1279:  inline StreamingRecognizeResponse& operator=(const StreamingRecognizeResponse& from) {
+./cloud_speech.pb.h:1285:  static const StreamingRecognizeResponse& default_instance();
+./cloud_speech.pb.h:1287:  static inline const StreamingRecognizeResponse* internal_default_instance() {
+./cloud_speech.pb.h:1288:    return reinterpret_cast<const StreamingRecognizeResponse*>(
+./cloud_speech.pb.h:1289:               &_StreamingRecognizeResponse_default_instance_);
+./cloud_speech.pb.h:1292:  void Swap(StreamingRecognizeResponse* other);
+./cloud_speech.pb.h:1296:  inline StreamingRecognizeResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+./cloud_speech.pb.h:1298:  StreamingRecognizeResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
+./cloud_speech.pb.h:1301:  void CopyFrom(const StreamingRecognizeResponse& from);
+./cloud_speech.pb.h:1302:  void MergeFrom(const StreamingRecognizeResponse& from);
+./cloud_speech.pb.h:1323:  void InternalSwap(StreamingRecognizeResponse* other);
+./cloud_speech.pb.h:1337:  typedef StreamingRecognizeResponse_EndpointerType EndpointerType;
+./cloud_speech.pb.h:1339:    StreamingRecognizeResponse_EndpointerType_ENDPOINTER_EVENT_UNSPECIFIED;
+./cloud_speech.pb.h:1341:    StreamingRecognizeResponse_EndpointerType_START_OF_SPEECH;
+./cloud_speech.pb.h:1343:    StreamingRecognizeResponse_EndpointerType_END_OF_SPEECH;
+./cloud_speech.pb.h:1345:    StreamingRecognizeResponse_EndpointerType_END_OF_AUDIO;
+./cloud_speech.pb.h:1347:    StreamingRecognizeResponse_EndpointerType_END_OF_UTTERANCE;
+./cloud_speech.pb.h:1349:    return StreamingRecognizeResponse_EndpointerType_IsValid(value);
+./cloud_speech.pb.h:1352:    StreamingRecognizeResponse_EndpointerType_EndpointerType_MIN;
+./cloud_speech.pb.h:1354:    StreamingRecognizeResponse_EndpointerType_EndpointerType_MAX;
+./cloud_speech.pb.h:1356:    StreamingRecognizeResponse_EndpointerType_EndpointerType_ARRAYSIZE;
+./cloud_speech.pb.h:1359:    return StreamingRecognizeResponse_EndpointerType_descriptor();
+./cloud_speech.pb.h:1362:    return StreamingRecognizeResponse_EndpointerType_Name(value);
+./cloud_speech.pb.h:1366:    return StreamingRecognizeResponse_EndpointerType_Parse(name, value);
+./cloud_speech.pb.h:1398:  // .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.h:1401:  ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType endpointer_type() const;
+./cloud_speech.pb.h:1402:  void set_endpointer_type(::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType value);
+./cloud_speech.pb.h:1404:  // @@protoc_insertion_point(class_scope:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
+./cloud_speech.pb.h:1875:// StreamingRecognizeRequest
+./cloud_speech.pb.h:1878:inline bool StreamingRecognizeRequest::has_streaming_config() const {
+./cloud_speech.pb.h:1881:inline void StreamingRecognizeRequest::set_has_streaming_config() {
+./cloud_speech.pb.h:1884:inline void StreamingRecognizeRequest::clear_streaming_config() {
+./cloud_speech.pb.h:1890:inline  const ::google::cloud::speech::v1beta1::StreamingRecognitionConfig& StreamingRecognizeRequest::streaming_config() const {
+./cloud_speech.pb.h:1891:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.h:1896:inline ::google::cloud::speech::v1beta1::StreamingRecognitionConfig* StreamingRecognizeRequest::mutable_streaming_config() {
+./cloud_speech.pb.h:1902:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.h:1905:inline ::google::cloud::speech::v1beta1::StreamingRecognitionConfig* StreamingRecognizeRequest::release_streaming_config() {
+./cloud_speech.pb.h:1906:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.h:1916:inline void StreamingRecognizeRequest::set_allocated_streaming_config(::google::cloud::speech::v1beta1::StreamingRecognitionConfig* streaming_config) {
+./cloud_speech.pb.h:1922:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeRequest.streaming_config)
+./cloud_speech.pb.h:1926:inline bool StreamingRecognizeRequest::has_audio_content() const {
+./cloud_speech.pb.h:1929:inline void StreamingRecognizeRequest::set_has_audio_content() {
+./cloud_speech.pb.h:1932:inline void StreamingRecognizeRequest::clear_audio_content() {
+./cloud_speech.pb.h:1938:inline const ::std::string& StreamingRecognizeRequest::audio_content() const {
+./cloud_speech.pb.h:1939:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1945:inline void StreamingRecognizeRequest::set_audio_content(const ::std::string& value) {
+./cloud_speech.pb.h:1946:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1953:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1956:inline void StreamingRecognizeRequest::set_audio_content(::std::string&& value) {
+./cloud_speech.pb.h:1957:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1965:  // @@protoc_insertion_point(field_set_rvalue:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1968:inline void StreamingRecognizeRequest::set_audio_content(const char* value) {
+./cloud_speech.pb.h:1976:  // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1978:inline void StreamingRecognizeRequest::set_audio_content(const void* value, size_t size) {
+./cloud_speech.pb.h:1986:  // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1988:inline ::std::string* StreamingRecognizeRequest::mutable_audio_content() {
+./cloud_speech.pb.h:1994:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:1997:inline ::std::string* StreamingRecognizeRequest::release_audio_content() {
+./cloud_speech.pb.h:1998:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:2006:inline void StreamingRecognizeRequest::set_allocated_audio_content(::std::string* audio_content) {
+./cloud_speech.pb.h:2016:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
+./cloud_speech.pb.h:2019:inline bool StreamingRecognizeRequest::has_streaming_request() const {
+./cloud_speech.pb.h:2022:inline void StreamingRecognizeRequest::clear_has_streaming_request() {
+./cloud_speech.pb.h:2025:inline StreamingRecognizeRequest::StreamingRequestCase StreamingRecognizeRequest::streaming_request_case() const {
+./cloud_speech.pb.h:2026:  return StreamingRecognizeRequest::StreamingRequestCase(_oneof_case_[0]);
+./cloud_speech.pb.h:2686:// StreamingRecognizeResponse
+./cloud_speech.pb.h:2689:inline bool StreamingRecognizeResponse::has_error() const {
+./cloud_speech.pb.h:2692:inline void StreamingRecognizeResponse::clear_error() {
+./cloud_speech.pb.h:2696:inline const ::google::rpc::Status& StreamingRecognizeResponse::error() const {
+./cloud_speech.pb.h:2697:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.h:2701:inline ::google::rpc::Status* StreamingRecognizeResponse::mutable_error() {
+./cloud_speech.pb.h:2706:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.h:2709:inline ::google::rpc::Status* StreamingRecognizeResponse::release_error() {
+./cloud_speech.pb.h:2710:  // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.h:2716:inline void StreamingRecognizeResponse::set_allocated_error(::google::rpc::Status* error) {
+./cloud_speech.pb.h:2724:  // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
+./cloud_speech.pb.h:2728:inline int StreamingRecognizeResponse::results_size() const {
+./cloud_speech.pb.h:2731:inline void StreamingRecognizeResponse::clear_results() {
+./cloud_speech.pb.h:2734:inline const ::google::cloud::speech::v1beta1::StreamingRecognitionResult& StreamingRecognizeResponse::results(int index) const {
+./cloud_speech.pb.h:2735:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.h:2738:inline ::google::cloud::speech::v1beta1::StreamingRecognitionResult* StreamingRecognizeResponse::mutable_results(int index) {
+./cloud_speech.pb.h:2739:  // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.h:2742:inline ::google::cloud::speech::v1beta1::StreamingRecognitionResult* StreamingRecognizeResponse::add_results() {
+./cloud_speech.pb.h:2743:  // @@protoc_insertion_point(field_add:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.h:2747:StreamingRecognizeResponse::mutable_results() {
+./cloud_speech.pb.h:2748:  // @@protoc_insertion_point(field_mutable_list:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.h:2752:StreamingRecognizeResponse::results() const {
+./cloud_speech.pb.h:2753:  // @@protoc_insertion_point(field_list:google.cloud.speech.v1beta1.StreamingRecognizeResponse.results)
+./cloud_speech.pb.h:2758:inline void StreamingRecognizeResponse::clear_result_index() {
+./cloud_speech.pb.h:2761:inline ::google::protobuf::int32 StreamingRecognizeResponse::result_index() const {
+./cloud_speech.pb.h:2762:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
+./cloud_speech.pb.h:2765:inline void StreamingRecognizeResponse::set_result_index(::google::protobuf::int32 value) {
+./cloud_speech.pb.h:2768:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
+./cloud_speech.pb.h:2771:// .google.cloud.speech.v1beta1.StreamingRecognizeResponse.EndpointerType endpointer_type = 4;
+./cloud_speech.pb.h:2772:inline void StreamingRecognizeResponse::clear_endpointer_type() {
+./cloud_speech.pb.h:2775:inline ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::endpointer_type() const {
+./cloud_speech.pb.h:2776:  // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
+./cloud_speech.pb.h:2777:  return static_cast< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType >(endpointer_type_);
+./cloud_speech.pb.h:2779:inline void StreamingRecognizeResponse::set_endpointer_type(::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType value) {
+./cloud_speech.pb.h:2782:  // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
+./cloud_speech.pb.h:2996:template <> struct is_proto_enum< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType> : ::google::protobuf::internal::true_type {};
+./cloud_speech.pb.h:2998:inline const EnumDescriptor* GetEnumDescriptor< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType>() {
+./cloud_speech.pb.h:2999:  return ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType_descriptor();
+Binary file ./cloud_speech.grpc.pb.o matches
+./cloud_speech.grpc.pb.h:71:    std::unique_ptr< ::grpc::ClientReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>> StreamingRecognize(::grpc::ClientContext* context) {
+./cloud_speech.grpc.pb.h:72:      return std::unique_ptr< ::grpc::ClientReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>>(StreamingRecognizeRaw(context));
+./cloud_speech.grpc.pb.h:74:    std::unique_ptr< ::grpc::ClientAsyncReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>> AsyncStreamingRecognize(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) {
+./cloud_speech.grpc.pb.h:75:      return std::unique_ptr< ::grpc::ClientAsyncReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>>(AsyncStreamingRecognizeRaw(context, cq, tag));
+./cloud_speech.grpc.pb.h:80:    virtual ::grpc::ClientReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* StreamingRecognizeRaw(::grpc::ClientContext* context) = 0;
+./cloud_speech.grpc.pb.h:81:    virtual ::grpc::ClientAsyncReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) = 0;
+./cloud_speech.grpc.pb.h:94:    std::unique_ptr< ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>> StreamingRecognize(::grpc::ClientContext* context) {
+./cloud_speech.grpc.pb.h:95:      return std::unique_ptr< ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>>(StreamingRecognizeRaw(context));
+./cloud_speech.grpc.pb.h:97:    std::unique_ptr<  ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>> AsyncStreamingRecognize(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) {
+./cloud_speech.grpc.pb.h:98:      return std::unique_ptr< ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>>(AsyncStreamingRecognizeRaw(context, cq, tag));
+./cloud_speech.grpc.pb.h:105:    ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* StreamingRecognizeRaw(::grpc::ClientContext* context) override;
+./cloud_speech.grpc.pb.h:106:    ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) override;
+./cloud_speech.grpc.pb.h:109:    const ::grpc::RpcMethod rpcmethod_StreamingRecognize_;
+./cloud_speech.grpc.pb.h:129:    virtual ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream);
+./cloud_speech.grpc.pb.h:172:  class WithAsyncMethod_StreamingRecognize : public BaseClass {
+./cloud_speech.grpc.pb.h:176:    WithAsyncMethod_StreamingRecognize() {
+./cloud_speech.grpc.pb.h:179:    ~WithAsyncMethod_StreamingRecognize() override {
+./cloud_speech.grpc.pb.h:183:    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) final override {
+./cloud_speech.grpc.pb.h:187:    void RequestStreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+./cloud_speech.grpc.pb.h:191:  typedef WithAsyncMethod_SyncRecognize<WithAsyncMethod_AsyncRecognize<WithAsyncMethod_StreamingRecognize<Service > > > AsyncService;
+./cloud_speech.grpc.pb.h:227:  class WithGenericMethod_StreamingRecognize : public BaseClass {
+./cloud_speech.grpc.pb.h:231:    WithGenericMethod_StreamingRecognize() {
+./cloud_speech.grpc.pb.h:234:    ~WithGenericMethod_StreamingRecognize() override {
+./cloud_speech.grpc.pb.h:238:    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) final override {
