@@ -1,14 +1,12 @@
 cmake_minimum_required(VERSION 2.8)
 project(googleapis)
 
-set(GOOGLE_API_SRC ./gens)
+set(GOOGLE_API_SRC ${CMAKE_CURRENT_SOURCE_DIR}/gens)
 
 # Find source files
 file(GLOB_RECURSE GOOGLE_API_SRC_ALL ${GOOGLE_API_SRC}/*.pb.cc)
 
 # Include header files
-
-${GOOGLE_API_SRC}
 include_directories(${GOOGLE_API_SRC})
 
 # Create shared library
