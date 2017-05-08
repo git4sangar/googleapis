@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(googleapis)
 
+set(CMAKE_CXX_FLAGS "-Wall -g -std=c++11")
+
 set(GOOGLE_API_SRC ${CMAKE_CURRENT_SOURCE_DIR}/gens)
 
 # Find source files
@@ -16,5 +18,5 @@ add_library(${PROJECT_NAME} SHARED ${GOOGLE_API_SRC_ALL})
 install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
 
 # Install library headers
-file(GLOB HEADERS include/*.h)
-install(FILES ${HEADERS} DESTINATION include/${PROJECT_NAME})
+file(GLOB_RECURSE GOOGLE_API_ALL_HEADERS include/*.h)
+install(FILES ${GOOGLE_API_ALL_HEADERS} DESTINATION include/${PROJECT_NAME})
