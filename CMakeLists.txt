@@ -15,7 +15,7 @@ include_directories(${GOOGLE_API_SRC})
 add_library(${PROJECT_NAME} SHARED ${GOOGLE_API_SRC_ALL})
 
 # Install library
-install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 
 # Install library headers
 file(GLOB_RECURSE GOOGLE_API_ALL_HEADERS ${GOOGLE_API_SRC}/*.h)
