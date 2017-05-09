@@ -22,7 +22,9 @@ file(GLOB_RECURSE GOOGLE_API_ALL_HEADERS ${GOOGLE_API_SRC}/*.h)
 #install(FILES ${GOOGLE_API_ALL_HEADERS} DESTINATION include/${PROJECT_NAME})
 
 # new stuff
+set(BASE "${CMAKE_CURRENT_SOURCE_DIR}/gens")
 foreach(ITEM ${GOOGLE_API_ALL_HEADERS})
   get_filename_component(ITEM_PATH ${ITEM} PATH)
+  string(REPLACE ${BASE} "" ITEM_PATH ${ITEM_PATH})
   install(FILES ${ITEM} DESTINATION "include/${PROJECT_NAME}/${ITEM_PATH}")
 endforeach()
