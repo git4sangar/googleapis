@@ -19,4 +19,10 @@ install(TARGETS ${PROJECT_NAME} DESTINATION lib/${PROJECT_NAME})
 
 # Install library headers
 file(GLOB_RECURSE GOOGLE_API_ALL_HEADERS ${GOOGLE_API_SRC}/*.h)
-install(FILES ${GOOGLE_API_ALL_HEADERS} DESTINATION include/${PROJECT_NAME})
+#install(FILES ${GOOGLE_API_ALL_HEADERS} DESTINATION include/${PROJECT_NAME})
+
+# new stuff
+foreach(ITEM ${GOOGLE_API_ALL_HEADERS})
+  get_filename_component(ITEM_PATH ${ITEM} PATH)
+  install(FILES ${ITEM} DESTINATION "include/${PROJECT_NAME}/${ITEM_PATH}")
+endforeach()
